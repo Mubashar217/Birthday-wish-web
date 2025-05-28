@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-//colors list
-
 const useTheme = () => {
 
   const themes = [
