@@ -72,26 +72,26 @@ export default function Home() {
           </form>
           <p className={styles.desc}>
             Crafted by{" "}
-            <a
+            <Link
               className={styles.span}
               href="/"
               target="_blank"
               rel="noreferrer"
             >
               Mubashar Mirza
-            </a>
+            </Link>
             .
           </p>
           <p className={styles.desc}>
             Thanks to the{" "}
-            <a
+            <Link
               className={styles.span}
               href="https://github.com/gouravkhunger/nextjs-birthday-wish/graphs/contributors"
               target="_blank"
               rel="noreferrer"
             >
               Ahmad
-            </a>
+            </Link>
             !
           </p>
         </div>
