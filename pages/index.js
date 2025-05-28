@@ -4,6 +4,7 @@ import Router from "next/router";
 import useTheme from "../hooks/useTheme";
 import { useState } from "react";
 import { Button } from "../components";
+import Link from "next/link";
 
 export default function Home() {
   const { themes, setTheme, currentTheme } = useTheme();

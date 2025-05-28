@@ -9,6 +9,7 @@ import * as htmlToImage from "html-to-image";
 import FileSaver from "file-saver";
 import { Button, CopyLinkButton } from "../components";
 
+
 const Wish = ({ history }) => {
   const router = useRouter();
   const { name } = router.query; // gets [name, colorId]
