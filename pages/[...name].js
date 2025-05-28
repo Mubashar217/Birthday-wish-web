@@ -9,7 +9,6 @@ import * as htmlToImage from "html-to-image";
 import FileSaver from "file-saver";
 import { Button, CopyLinkButton } from "../components";
 
-
 const Wish = ({ history }) => {
   const router = useRouter();
   const { name } = router.query;
@@ -85,7 +84,10 @@ const Wish = ({ history }) => {
     return (
       <>
         {downloading ? (
-          <h1 className={styles.titleImg} style={{ "--wish-length": wish.length }}>
+          <h1
+            className={styles.titleImg}
+            style={{ "--wish-length": wish.length }}
+          >
             <div>{base_letters.map((letter) => letter)}</div>
             <div>{name_letters.map((letter) => letter)}</div>
           </h1>
@@ -110,8 +112,6 @@ const Wish = ({ history }) => {
             <p className={styles.descImg}>
               {messages[randomNumber(0, messages.length)].value}
             </p>
-            
-            
           </div>
         </main>
       </div>
@@ -164,7 +164,10 @@ const Wish = ({ history }) => {
             />
           ) : null}
 
-          <Button onClick={() => router.push("/")} text="&larr; Create a wish" />
+          <Button
+            onClick={() => router.push("/")}
+            text="&larr; Create a wish"
+          />
         </div>
       </main>
 
