@@ -16,9 +16,9 @@ const useTheme = () => {
 
   const setTheme = (id) => {
     const requiredTheme = themes.find((item) => id == item.id);
-    // If the theme with the given id exists then change theme .
+
     if (requiredTheme) setCurrentTheme(requiredTheme);
-    // If the theme with the given id does not exist then it doesnt change the default theme;
+
   };
 
   useEffect(() => {

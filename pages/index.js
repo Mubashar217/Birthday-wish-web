@@ -19,8 +19,7 @@ export default function Home() {
       return;
     }
     if (id == 0) Router.push(value);
-    // If the theme is default blue then push to '/{name}'
-    else Router.push(`/${value}/${id}`); // If the theme is not default then will push to '/{name}?color={id}
+    else Router.push(`/${value}/${id}`)
   };
 
   return (
@@ -37,7 +36,6 @@ export default function Home() {
             Create a <span className={styles.span}>Birthday</span> Wish
           </h1>
         </div>
-        {/* Theme Color  */}
 
         <div className={styles.themeWrapper}>
           <form
