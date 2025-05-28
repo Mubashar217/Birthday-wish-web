@@ -12,7 +12,7 @@ import { Button, CopyLinkButton } from "../components";
 
 const Wish = ({ history }) => {
   const router = useRouter();
-  const { name } = router.query; // gets [name, colorId]
+  const { name } = router.query;
   const color = name ? name[1] : 0;
   const [downloading, setDownloading] = useState(false);
   const [downloadedOnce, setDownloadedOnce] = useState(false);
@@ -110,6 +110,8 @@ const Wish = ({ history }) => {
             <p className={styles.descImg}>
               {messages[randomNumber(0, messages.length)].value}
             </p>
+            
+            
           </div>
         </main>
       </div>
@@ -133,7 +135,6 @@ const Wish = ({ history }) => {
             {messages[randomNumber(0, messages.length)].value}
           </p>
 
-          {/* Cake video animation added here */}
           <video
             src="/cake2.mp4"
             autoPlay
