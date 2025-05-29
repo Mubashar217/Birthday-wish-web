@@ -59,7 +59,7 @@ const Wish = ({ history }) => {
   };
 
   const title = (name) => {
-    const wish = "Happy Birthday " + name + "!";
+    const wish = "Happy Birthday Dear " + name + "!";
     const base_letters = [];
     const name_letters = [];
 
